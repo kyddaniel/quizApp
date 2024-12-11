@@ -24,4 +24,9 @@ public class QuestionController {
         return questionService.getQuestionsByCategory(category);
     }
 
+    @PostMapping("/add")
+    public String addQuestion(@RequestBody Question question) { //System.out.println(question.getQuestionTitle());
+        return questionService.addQuestion(question);
+    }
+
 }
