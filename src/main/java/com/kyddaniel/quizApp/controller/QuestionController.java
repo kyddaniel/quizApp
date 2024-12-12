@@ -3,7 +3,6 @@ package com.kyddaniel.quizApp.controller;
 import com.kyddaniel.quizApp.model.Question;
 import com.kyddaniel.quizApp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,7 +26,7 @@ public class QuestionController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<String> addQuestion(@RequestBody Question question) { //System.out.println(question.getQuestionTitle());
+    public ResponseEntity<String> addQuestion(@RequestBody Question question) {
         return questionService.addQuestion(question);
     }
 

@@ -1,6 +1,5 @@
 package com.kyddaniel.quizApp.model;
 
-import jakarta.persistence.Entity;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
